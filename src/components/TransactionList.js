@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { TransactionContext } from '../contexts/TransactionContext';
 
 const TransactionList = () => {
+    const context = useContext(TransactionContext);
+    console.log(context);
+
     return (
         <div className="container mt-3">
             <h3>Transaction History</h3>

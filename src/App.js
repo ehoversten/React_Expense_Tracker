@@ -5,17 +5,20 @@ import TotalsExpense from './components/TotalsExpense';
 import TransactionList from './components/TransactionList';
 import AddTransaction from './components/AddTransaction';
 
+// Import Context Provider
+import { TransactionProvider } from './contexts/TransactionContext';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <TransactionProvider>
       <Header />
       <Balance />
       <TotalsExpense />
       <TransactionList />
       <AddTransaction />
-    </div>
+    </TransactionProvider>
   );
 }
 
