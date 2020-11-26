@@ -4,6 +4,7 @@ import { TransactionItem } from './TransactionItem';
 
 const TransactionList = () => {
     const context = useContext(TransactionContext);
+    // -- TESTING -- //
     console.log(context);
 
     return (
