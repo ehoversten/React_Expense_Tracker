@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { TransactionContext } from '../contexts/TransactionContext';
+import { TransactionItem } from './TransactionItem';
 
 const TransactionList = () => {
     const context = useContext(TransactionContext);
@@ -9,9 +10,8 @@ const TransactionList = () => {
         <div className="container mt-3">
             <h3>Transaction History</h3>
             <ul className="history">
-                <li>Item One</li>
-                <li>Item Two</li>
-                <li>Item Three</li>
+                {context.transactions.map( item => (
+                    <TransactionItem key={item.id} listItem={item} />))}
             </ul>
         </div>
     )
