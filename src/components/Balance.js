@@ -7,7 +7,7 @@ const Balance = () => {
     // Create an ARRAY of all amounts
     const sumArray = transactions.map(item => item.amount);
     // Sum the total amount from all transactions
-    const totalSum = sumArray.reduce((acc, elem) => (acc += elem), 0);
+    const totalSum = sumArray.reduce((acc, elem) => (acc += elem), 0).toFixed(2);
 
     return (
         <div className="container">
