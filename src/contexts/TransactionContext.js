@@ -18,8 +18,18 @@ export const TransactionContext = createContext(initialState);
 export const TransactionProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
+    // Define ACTIONS
+    function deleteTransaction(id) {
+        dispatch({
+            type: 'DELETE_TRANSACTION',
+            payload: id
+        })
+    }
+
+
     return (
-        <TransactionContext.Provider value={{ transactions: state.transactions}}> 
+        // Make our STATE (context) and METHODS available to the nested COMPONENTS in our application
+        <TransactionContext.Provider value={{ transactions: state.transactions, deleteTransaction}}> 
             { children }
         </TransactionContext.Provider>
     )
