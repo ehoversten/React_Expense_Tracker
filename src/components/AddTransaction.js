@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
-const { TransactionContext } from '../contexts/TransactionContext';
+import { TransactionContext } from '../contexts/TransactionContext';
 import { Card, Form, Button } from 'react-bootstrap';
+import { v4 as uuidv4 } from 'uuid';
 
 const AddTransaction = () => {
     // Setup useState hooks
@@ -12,7 +13,19 @@ const AddTransaction = () => {
     // Define our onSubmit method logic
     const onSubmit = e => {
         e.preventDefault();
-        console.log("Submitting new transaction")
+        console.log("Submitting new transaction");
+        let newTransaction = {
+            id: uuidv4(),
+            text: text,
+            amount: parseInt(amount)
+        }
+
+        console.log(newTransaction);
+        addTransaction(newTransaction);
+
+        // Clear 'text' and 'amount' STATE (and form inputs)
+        setText('');
+        setAmount('');
     } 
 
     return (
@@ -22,11 +35,11 @@ const AddTransaction = () => {
                     <Form.Group controlId="formGroupEmail">
                         <Form.Label>Description</Form.Label>
                         { /* added associated value hooks and onChange handlers to inputs */ }
-                        <Form.Control type="text" value={text} onChange={ (e) => setText(e.target.value) } placeholder="Enter Transaction Description" />
+                        <Form.Control type="text" id="text" value={text} onChange={ (e) => setText(e.target.value) } placeholder="Enter Transaction Description" />
                     </Form.Group>
                     <Form.Group controlId="formGroupEmail">
                         <Form.Label>Amount</Form.Label>
-                        <Form.Control type="text" value={amount} onChange={ (e) => setAmount(e.target.value) } placeholder="Enter Amount" />
+                        <Form.Control type="number" id="amount" value={amount} onChange={ (e) => setAmount(e.target.value) } placeholder="Enter Amount" />
                     </Form.Group>
                     <Button variant="success" type="submit">Submit</Button>
                 </Form>
