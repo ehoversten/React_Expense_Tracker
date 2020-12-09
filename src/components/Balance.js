@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Container, Row } from 'react-bootstrap';
 import { TransactionContext } from '../contexts/TransactionContext';
 
 const Balance = () => {
@@ -10,10 +11,13 @@ const Balance = () => {
     const totalSum = sumArray.reduce((acc, elem) => (acc += elem), 0).toFixed(2);
 
     return (
-        <div className="container">
-            <h4>Current Balance</h4>
-            <h4>${totalSum}</h4>
-        </div>
+
+        <Container className="mb-5">
+            <Row className="justify-content-center">
+                <h4>Current Balance</h4>
+                <h4>${totalSum}</h4>
+            </Row>
+        </Container>
     )
 }
 

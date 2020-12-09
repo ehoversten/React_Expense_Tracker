@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Card } from 'react-bootstrap';
+import { Container, Row, Card } from 'react-bootstrap';
 import { TransactionContext } from '../contexts/TransactionContext';
 
 const TotalsExpense = () => {
@@ -19,8 +19,8 @@ const TotalsExpense = () => {
         .toFixed(2);
 
     return (
-        <div className="container justify-content-center mt-4">
-            <div className="row justify-content-center">
+        <Container className="">
+            <Row className="justify-content-center">
                 <Card className='mr-2'>
                     <Card.Header>Income</Card.Header>
                     <Card.Body>
@@ -40,8 +40,8 @@ const TotalsExpense = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </div>
-        </div>
+            </Row>
+        </Container>
     )
 }
 
