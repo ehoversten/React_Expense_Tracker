@@ -12,9 +12,11 @@ const Balance = () => {
 
     return (
 
-        <Container className="mb-5">
+        <Container className="mb-3">
             <Row className="justify-content-center">
                 <h4>Current Balance</h4>
+            </Row>
+            <Row className="justify-content-center">
                 <h4>${totalSum}</h4>
             </Row>
         </Container>

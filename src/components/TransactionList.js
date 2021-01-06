@@ -13,7 +13,7 @@ const TransactionList = () => {
     return (
         <Container className="mt-3">
             <Row className="justify-content-center">
-                <h3>Transaction History</h3>
+                <h5>Transaction History</h5>
             </Row>
             <Row className="justify-content-center"> 
                 <ul className="history">

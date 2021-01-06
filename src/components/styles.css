@@ -7,3 +7,21 @@
     width: 500px;
 }
 
+.card-header, .card-body {
+    text-align: center;
+}
+
+.income {
+    border: 2px solid green;
+}
+.income-title {
+    background: lightgreen;
+}
+
+.expense {
+    border: 2px solid red;
+}
+
+.expense-title {
+    background: lightcoral;
+}

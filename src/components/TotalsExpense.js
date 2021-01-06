@@ -21,22 +21,22 @@ const TotalsExpense = () => {
     return (
         <Container className="">
             <Row className="justify-content-center">
-                <Card className='mr-2'>
-                    <Card.Header>Income</Card.Header>
+                <Card className='mr-2 income'>
+                    <Card.Header className="income-title">Income</Card.Header>
                     <Card.Body>
                         <Card.Title>Added</Card.Title>
                         <Card.Text>
-                        + ${income}
+                            + ${income}
                         </Card.Text>
                     </Card.Body>
                 </Card>
 
-                <Card>
-                    <Card.Header>Expense</Card.Header>
+                <Card className="expense">
+                    <Card.Header className="expense-title">Expense</Card.Header>
                     <Card.Body>
                         <Card.Title>Subtracted</Card.Title>
                         <Card.Text>
-                        - ${Math.abs(expense)}
+                            - ${Math.abs(expense)}
                         </Card.Text>
                     </Card.Body>
                 </Card>
