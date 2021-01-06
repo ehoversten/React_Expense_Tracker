@@ -14,6 +14,8 @@ const TransactionList = () => {
         <Container className="mt-3">
             <Row className="justify-content-center">
                 <h3>Transaction History</h3>
+            </Row>
+            <Row className="justify-content-center"> 
                 <ul className="history">
                     {context.transactions.map( item => (
                         <TransactionItem key={item.id} listItem={item} />))}

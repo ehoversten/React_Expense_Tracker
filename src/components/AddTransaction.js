@@ -4,6 +4,8 @@ import { TransactionContext } from '../contexts/TransactionContext';
 import { Card, Form, Button } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
 
+import './styles.css';
+
 const AddTransaction = () => {
     // Setup useState hooks
     const [text, setText] = useState('');
@@ -30,7 +32,7 @@ const AddTransaction = () => {
     } 
 
     return (
-        <Container className="mt-3">
+        <Container className="add mt-3">
             <Row className="justify-content-center">
                 <Card className="container p-3">
                     <Form onSubmit={onSubmit}>
