@@ -1,7 +1,17 @@
+.content-wrapper {
+    /* max-width: 65%; */
+    min-height: 550px;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    background: #d2d2d2;
+    border-radius: 25px;;
+    box-shadow: 4px 3px 8px 1px #969696;
+}
+
+
 .history {
     display: block;
 }
-
 
 .add {
     width: 500px;
@@ -24,4 +34,9 @@
 
 .expense-title {
     background: lightcoral;
+}
+
+.form-container {
+    border: 2px solid darkgrey;
+    border-radius: 5px;
 }

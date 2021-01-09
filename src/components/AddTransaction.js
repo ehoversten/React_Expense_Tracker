@@ -34,7 +34,7 @@ const AddTransaction = () => {
     return (
         <Container className="add mt-3">
             <Row className="justify-content-center">
-                <Card className="container p-3">
+                <Card className="container p-3 form-container">
                     <Form onSubmit={onSubmit}>
                         <Form.Group controlId="formGroupEmail">
                             <Form.Label>Description</Form.Label>

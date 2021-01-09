@@ -8,16 +8,22 @@ import AddTransaction from './components/AddTransaction';
 // Import Context Provider
 import { TransactionProvider } from './contexts/TransactionContext';
 
+import { Container } from 'react-bootstrap';
+
 import './App.css';
 
 function App() {
   return (
     <TransactionProvider>
       <Header />
-      <Balance />
-      <TotalsExpense />
-      <TransactionList />
-      <AddTransaction />
+        <Container>
+          <div className="content-wrapper">
+            <Balance />
+            <TotalsExpense />
+            <TransactionList />
+            <AddTransaction />
+          </div>
+        </Container>
     </TransactionProvider>
   );
 }
