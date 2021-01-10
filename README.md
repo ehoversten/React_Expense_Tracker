@@ -7,9 +7,11 @@
 
 ## Description
 
+This is a simple application build to learn more about how to use React Hooks and the React Context API. The application allows a User to keep track of an account balance, add positive "income" expenses, subtract "expense" expenditures using a simple form submission. It also keeps a running tab (or history) of both input and output transactions. Project uses React-Bootstrap for CSS styling. Additional functionality to come.
 
-[React Expense Tracker](https://#)
+Live Application Link: [React Expense Tracker](https://ehoversten.github.io/React_Expense_Tracker/)
 
+&nbsp;
 
 ## Usage
 
@@ -20,6 +22,7 @@ A User Can:
     * Keep a history of inputs and expenditures
     * Add new expenses that will either increase or decrease their account balance
 
+
 ## To Do
     * Improve Styling
     * Add Persisting Data w/ IndexDB
@@ -28,6 +31,8 @@ A User Can:
     * Add Node/Express Server Backend
     * Add Database (mySQL/Sequelize or Postgres)
     * Sign Up / Login Authentication
+
+&nbsp;
 
 
 ## Installation
@@ -54,7 +59,8 @@ Run the application locally
 $> yarn run start
 ```
 
-#
+&nbsp;
+
 
 ## Deployment
 
@@ -68,15 +74,19 @@ Deployed with GitHub Pages
 - [React](https://reactjs.org/) - Frontend Library
 - [React-Bootstrap](https://react-bootstrap.github.io/) - CSS Framework
 
+&nbsp;
 
 ## Versioning
 
 Version 1.0
 
+&nbsp;
+
 ## Authors
 
 - **Erik Hoversten** - _Initial work_ - GitHub: [ehoversten](https://github.com/ehoversten)
 
+&nbsp;
 
 ## License
 
