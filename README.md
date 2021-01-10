@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Project - React Expense Tracker w/ Hooks and Context
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![language](https://img.shields.io/badge/Language-JavaScript-yellow)
+![frontend](https://img.shields.io/badge/Frontend-React-blue)
+![CSS](https://img.shields.io/badge/CSS-React_Bootstrap-green)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Description
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[React Expense Tracker](https://#)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A User Can:
+    * Track their total account balance
+    * Track their total income deposits
+    * Track their total expenses 
+    * Keep a history of inputs and expenditures
+    * Add new expenses that will either increase or decrease their account balance
 
-### `yarn build`
+## To Do
+    * Improve Styling
+    * Add Persisting Data w/ IndexDB
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Improvements
+    * Add Node/Express Server Backend
+    * Add Database (mySQL/Sequelize or Postgres)
+    * Sign Up / Login Authentication
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `yarn eject`
+Start by cloning the project Repo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+$> git clone https://github.com/ehoversten/React_Expense_Tracker
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install project dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```javascript
+$> cd React_Expense_Tracker
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+$> yarn install
+// OR using NPM
+$> npm install
+```
 
-## Learn More
+Run the application locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```javascript
+$> yarn run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deployed with GitHub Pages
 
-### Analyzing the Bundle Size
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Built With
 
-### Making a Progressive Web App
+- [JavaScript]() - Development Language
+- [React](https://reactjs.org/) - Frontend Library
+- [React-Bootstrap](https://react-bootstrap.github.io/) - CSS Framework
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Versioning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Version 1.0
 
-### Deployment
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Erik Hoversten** - _Initial work_ - GitHub: [ehoversten](https://github.com/ehoversten)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
